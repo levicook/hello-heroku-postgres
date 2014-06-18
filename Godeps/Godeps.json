@@ -1,5 +1,5 @@
 {
-	"ImportPath": "github.com/levicook/hello-heroku-db",
+	"ImportPath": "github.com/levicook/hello-heroku-postgres",
 	"GoVersion": "go1.2",
 	"Deps": [
 		{

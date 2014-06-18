@@ -29,3 +29,4 @@ pg_backend_pid=25740
 ```
 
 pg_backend_pid comes from postgres
+heroku create -b https://github.com/kr/heroku-buildpack-go.git
