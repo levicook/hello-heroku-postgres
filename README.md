@@ -2,6 +2,35 @@
 ###
 
 ```bash
+
+$ heroku create -b https://github.com/kr/heroku-buildpack-go.git
+Creating frozen-citadel-6244... done, stack is cedar
+BUILDPACK_URL=https://github.com/kr/heroku-buildpack-go.git
+http://frozen-citadel-6244.herokuapp.com/ | git@heroku.com:frozen-citadel-6244.git
+Git remote heroku added
+
+$ git push heroku master
+Initializing repository, done.
+Counting objects: 76, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (64/64), done.
+Writing objects: 100% (76/76), 57.95 KiB | 0 bytes/s, done.
+Total 76 (delta 9), reused 0 (delta 0)
+
+-----> Fetching custom git buildpack... done
+-----> Go app detected
+-----> Installing go1.2... done
+-----> Running: godep go install -tags heroku ./...
+-----> Discovering process types
+       Procfile declares types -> web
+
+-----> Compressing... done, 1.9MB
+-----> Launching... done, v4
+       http://frozen-citadel-6244.herokuapp.com/ deployed to Heroku
+
+To git@heroku.com:frozen-citadel-6244.git
+ * [new branch]      master -> master
+
 $ heroku addons:add heroku-postgresql
 Adding heroku-postgresql on fierce-ocean-1703... done, v7 (free)
 Attached as HEROKU_POSTGRESQL_BLACK_URL
@@ -29,4 +58,3 @@ pg_backend_pid=25740
 ```
 
 pg_backend_pid comes from postgres
-heroku create -b https://github.com/kr/heroku-buildpack-go.git
