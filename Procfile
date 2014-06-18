@@ -1,1 +1,1 @@
-web: hello-heroku-db
+web: hello-heroku-postgres
