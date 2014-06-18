@@ -33,10 +33,7 @@ func main() {
 
 		var pgPid int
 		panicIf(database.QueryRow("SELECT pg_backend_pid()").Scan(&pgPid))
-
-		for _, env := range os.Environ() {
-			fmt.Fprintf(w, "pg_backend_pid=%v", pgPid)
-		}
+		fmt.Fprintf(w, "pg_backend_pid=%v", pgPid)
 	})
 
 	panicIf(http.ListenAndServe(":"+port, nil))
