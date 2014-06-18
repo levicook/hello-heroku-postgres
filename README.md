@@ -1,5 +1,5 @@
-
-###
+hello-heroku-postgres
+=====================
 
 ```bash
 $ heroku create -b https://github.com/kr/heroku-buildpack-go.git
@@ -37,6 +37,13 @@ Total 76 (delta 9), reused 0 (delta 0)
 
 To git@heroku.com:frozen-citadel-6244.git
  * [new branch]      master -> master
-```
 
-pg_backend_pid comes from postgres
+$ curl -i  http://frozen-citadel-6244.herokuapp.com/
+HTTP/1.1 200 OK
+Content-Type: text/plain; charset=utf-8
+Date: Wed, 18 Jun 2014 18:11:01 GMT
+Content-Length: 18
+Connection: keep-alive
+
+pg_backend_pid=762
+```
