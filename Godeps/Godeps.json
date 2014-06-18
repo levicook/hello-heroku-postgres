@@ -5,6 +5,10 @@
 		{
 			"ImportPath": "github.com/levicook/go-detect",
 			"Rev": "503493bb1db539c457ac24136709d92efa20cb04"
+		},
+		{
+			"ImportPath": "github.com/lib/pq",
+			"Rev": "f08bb026e0d6b644cad24d850d13352cc47400c5"
 		}
 	]
 }
